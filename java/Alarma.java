@@ -166,22 +166,6 @@ public class Alarma extends AppCompatActivity {
             }
         });
 
-        /*conectar.setOnClickListener(view -> {
-            base.child("alarmaconectada").setValue(true);
-            alarmades.setVisibility(View.INVISIBLE);
-            alarmacon.setVisibility(View.VISIBLE);
-            alarma.setVisibility(View.INVISIBLE);
-        });
-
-        desconectar.setOnClickListener(view -> {
-            base.child("alarmaconectada").setValue(false);
-            base.child("alarma1").setValue(false);
-            base.child("alarma2").setValue(false);
-            alarmades.setVisibility(View.VISIBLE);
-            alarmacon.setVisibility(View.INVISIBLE);
-            alarma.setVisibility(View.INVISIBLE);
-        });*/
-
         base.child("ultimaalarma1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
