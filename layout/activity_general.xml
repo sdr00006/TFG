@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#000000"
+    tools:context=".General">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vistageneral"
+        android:layout_width="412dp"
+        android:layout_height="705dp"
+        android:layout_marginTop="36dp"
+        android:background="#0B1557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout1"
+            android:layout_width="371dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#80AAF4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/conectar"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginBottom="3dp"
+                android:backgroundTint="#4256C1"
+                android:paddingLeft="0dp"
+                android:paddingTop="1dp"
+                android:paddingRight="0dp"
+                android:text="APAGAR TODO"
+                android:textColor="#A4C2F8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/encenderluz"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="3dp"
+                android:backgroundTint="#4256C1"
+                android:paddingLeft="0dp"
+                android:paddingTop="1dp"
+                android:paddingRight="0dp"
+                android:text="ENCENDER TODO"
+                android:textColor="#A4C2F8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/luz_salon"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/salon" />
+
+            <ImageView
+                android:id="@+id/luz_cocina"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_salon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cocina" />
+
+            <ImageView
+                android:id="@+id/luz_bano"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_cocina"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bano" />
+
+            <ImageView
+                android:id="@+id/luz_hab1"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_bano"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hab1" />
+
+            <ImageView
+                android:id="@+id/luz_hab2"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_hab1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hab2" />
+
+            <ImageView
+                android:id="@+id/luz_salon_off"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bombilla0" />
+
+            <ImageView
+                android:id="@+id/luz_salon_on"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bombilla1" />
+
+            <ImageView
+                android:id="@+id/luz_cocina_off"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_salon_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bombilla0" />
+
+            <ImageView
+                android:id="@+id/luz_cocina_on"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_salon_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bombilla1" />
+
+            <ImageView
+                android:id="@+id/luz_bano_off"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_cocina_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bombilla0" />
+
+            <ImageView
+                android:id="@+id/luz_bano_on"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_cocina_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bombilla1" />
+
+            <ImageView
+                android:id="@+id/luz_hab1_off"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_bano_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bombilla0" />
+
+            <ImageView
+                android:id="@+id/luz_hab1_on"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_bano_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bombilla1" />
+
+            <ImageView
+                android:id="@+id/luz_hab2_off"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_hab1_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bombilla0" />
+
+            <ImageView
+                android:id="@+id/luz_hab2_on"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/luz_hab1_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bombilla1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="371dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#80AAF4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout1">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="140dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#061530"
+                android:fadingEdge="horizontal|vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="138dp"
+                    android:layout_height="118dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#FE7373"
+                    android:fadingEdge="horizontal|vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tempmedia"
+                        android:layout_width="101dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="53dp"
+                        android:fontFamily="@font/orbitron"
+                        android:text="N/A"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="false"
+                        android:textColor="#0B1557"
+                        android:textSize="34sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/grados6"
+                        android:layout_width="33dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="56dp"
+                        android:fontFamily="@font/orbitron"
+                        android:text="ºC"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="false"
+                        android:textColor="#0B1557"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="138dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:text="TEMPERATURA MEDIA"
+                        android:textAlignment="center"
+                        android:textColor="#0B1557"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="201dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#061530"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="145dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:text="TEMPERATURA DESEADA"
+                    android:textAlignment="center"
+                    android:textColor="#80A9F3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tempdeseada"
+                    android:layout_width="105dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="53dp"
+                    android:fontFamily="@font/orbitron"
+                    android:text="N/A"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#80A9F3"
+                    android:textSize="34sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/grados7"
+                    android:layout_width="33dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="106dp"
+                    android:layout_marginTop="56dp"
+                    android:fontFamily="@font/orbitron"
+                    android:text="ºC"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#80A9F3"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/botonmenos"
+                    android:layout_width="53dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:backgroundTint="#4256C1"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:textColor="#80A9F3"
+                    android:textSize="60sp"
+                    app:icon="@drawable/menos"
+                    app:iconGravity="top"
+                    app:iconSize="30dp"
+                    app:iconTint="#A4C2F8"
+                    app:iconTintMode="src_atop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/botonborrar" />
+
+                <Button
+                    android:id="@+id/botonborrar"
+                    android:layout_width="53dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:backgroundTint="#4256C1"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="0dp"
+                    android:text="BORRAR"
+                    android:textColor="#A4C2F8"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/botonmas" />
+
+                <Button
+                    android:id="@+id/botonmas"
+                    android:layout_width="53dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:backgroundTint="#4256C1"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/mas"
+                    app:iconGravity="top"
+                    app:iconSize="30dp"
+                    app:iconTint="#A4C2F8"
+                    app:iconTintMode="src_atop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="371dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#80AAF4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <Button
+                android:id="@+id/apagarcalefacion"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginBottom="3dp"
+                android:backgroundTint="#4256C1"
+                android:paddingLeft="0dp"
+                android:paddingTop="1dp"
+                android:paddingRight="0dp"
+                android:text="APAGAR TODO"
+                android:textColor="#A4C2F8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/encendercalefacion"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="3dp"
+                android:backgroundTint="#4256C1"
+                android:paddingLeft="0dp"
+                android:paddingTop="1dp"
+                android:paddingRight="0dp"
+                android:text="ENCENDER TODO"
+                android:textColor="#A4C2F8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/cal_salon"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/salon" />
+
+            <ImageView
+                android:id="@+id/cal_cocina"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_salon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cocina" />
+
+            <ImageView
+                android:id="@+id/cal_bano"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_cocina"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bano" />
+
+            <ImageView
+                android:id="@+id/cal_hab1"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_bano"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hab1" />
+
+            <ImageView
+                android:id="@+id/cal_hab2"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_hab1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hab2" />
+
+            <ImageView
+                android:id="@+id/cal_salon_off"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calefaccionoff" />
+
+            <ImageView
+                android:id="@+id/cal_salon_on"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calefaccionon" />
+
+            <ImageView
+                android:id="@+id/cal_cocina_off"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_salon_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calefaccionoff" />
+
+            <ImageView
+                android:id="@+id/cal_cocina_on"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_salon_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calefaccionon" />
+
+            <ImageView
+                android:id="@+id/cal_bano_off"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_cocina_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calefaccionoff" />
+
+            <ImageView
+                android:id="@+id/cal_bano_on"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_cocina_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calefaccionon" />
+
+            <ImageView
+                android:id="@+id/cal_hab1_off"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_bano_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calefaccionoff" />
+
+            <ImageView
+                android:id="@+id/cal_hab1_on"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_bano_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calefaccionon" />
+
+            <ImageView
+                android:id="@+id/cal_hab2_off"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_hab1_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calefaccionoff" />
+
+            <ImageView
+                android:id="@+id/cal_hab2_on"
+                android:layout_width="69dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toEndOf="@+id/cal_hab1_off"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calefaccionon" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="371dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#80AAF4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+            <Button
+                android:id="@+id/apagaraire"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginBottom="3dp"
+                android:backgroundTint="#4256C1"
+                android:paddingLeft="0dp"
+                android:paddingTop="1dp"
+                android:paddingRight="0dp"
+                android:text="APAGAR TODO"
+                android:textColor="#A4C2F8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/encenderaire"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="3dp"
+                android:backgroundTint="#4256C1"
+                android:paddingLeft="0dp"
+                android:paddingTop="1dp"
+                android:paddingRight="0dp"
+                android:text="ENCENDER TODO"
+                android:textColor="#A4C2F8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/aire_salon"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/salon" />
+
+            <ImageView
+                android:id="@+id/aire_cocina"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/aire_salon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cocina" />
+
+            <ImageView
+                android:id="@+id/aire_bano"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/aire_cocina"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bano" />
+
+            <ImageView
+                android:id="@+id/aire_hab1"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/aire_bano"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hab1" />
+
+            <ImageView
+                android:id="@+id/aire_hab2"
+                android:layout_width="29dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toEndOf="@+id/aire_hab1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hab2" />
+
+            <ImageView
+                android:id="@+id/aire_salon_off"
+                android:layout_width="99dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="-2dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aireoff" />
+
+            <ImageView
+                android:id="@+id/aire_salon_on"
+                android:layout_width="99dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="-2dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aireon" />
+
+            <ImageView
+                android:id="@+id/aire_cocina_off"
+                android:layout_width="99dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aireoff" />
+
+            <ImageView
+                android:id="@+id/aire_cocina_on"
+                android:layout_width="99dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aireon" />
+
+            <ImageView
+                android:id="@+id/aire_bano_off"
+                android:layout_width="99dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aireoff" />
+
+            <ImageView
+                android:id="@+id/aire_bano_on"
+                android:layout_width="99dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aireon" />
+
+            <ImageView
+                android:id="@+id/aire_hab1_off"
+                android:layout_width="99dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="205dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aireoff" />
+
+            <ImageView
+                android:id="@+id/aire_hab1_on"
+                android:layout_width="99dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="205dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aireon" />
+
+            <ImageView
+                android:id="@+id/aire_hab2_off"
+                android:layout_width="99dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="274dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aireoff" />
+
+            <ImageView
+                android:id="@+id/aire_hab2_on"
+                android:layout_width="99dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="274dp"
+                android:layout_marginTop="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aireon" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/botonresumen"
+        android:layout_width="103dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#17389C"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="RESUMEN"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/botongeneral"
+        android:layout_width="103dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#0B1557"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="GENERAL"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/botonresumen"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/botonsala"
+        android:layout_width="103dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#17389C"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="SALA"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/botongeneral"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/botonalarma"
+        android:layout_width="103dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#17389C"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="ALARMA"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/botonsala" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
