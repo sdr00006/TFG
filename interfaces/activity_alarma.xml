@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1557"
+    tools:context=".Alarma">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="412dp"
+        android:layout_height="705dp"
+        android:layout_marginTop="28dp"
+        android:background="#0B1557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout1"
+            android:layout_width="371dp"
+            android:layout_height="341dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#80AAF4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/nombrealarma"
+                android:layout_width="371dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="16dp"
+                android:text="ALARMA"
+                android:textAlignment="center"
+                android:textColor="#0B1557"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/conectar"
+                android:layout_width="165dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#4256C1"
+                android:paddingLeft="0dp"
+                android:paddingTop="1dp"
+                android:paddingRight="0dp"
+                android:text="CONECTAR"
+                android:textColor="#A4C2F8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/desconectar"
+                android:layout_width="165dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#4256C1"
+                android:paddingLeft="0dp"
+                android:paddingTop="1dp"
+                android:paddingRight="0dp"
+                android:text="DESCONECTAR"
+                android:textColor="#A4C2F8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/alarmacon"
+                android:layout_width="241dp"
+                android:layout_height="241dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="35dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/alarmaconectada" />
+
+            <ImageView
+                android:id="@+id/alarmades"
+                android:layout_width="241dp"
+                android:layout_height="241dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="35dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/alarmadesconectada" />
+
+            <ImageView
+                android:id="@+id/alarma"
+                android:layout_width="241dp"
+                android:layout_height="241dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="35dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/alarma" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="371dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#80AAF4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="371dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="16dp"
+                android:text="ÚLTIMA ALARMA"
+                android:textAlignment="center"
+                android:textColor="#0B1557"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ualarma1"
+                android:layout_width="371dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:text="ULT ALARMA"
+                android:textAlignment="center"
+                android:textColor="#0B1557"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/ualarma2"
+                android:layout_width="371dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="ULT ALARMA"
+                android:textAlignment="center"
+                android:textColor="#0B1557"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ualarma1" />
+
+            <TextView
+                android:id="@+id/ualarma3"
+                android:layout_width="371dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="ULT ALARMA"
+                android:textAlignment="center"
+                android:textColor="#0B1557"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ualarma2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="371dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#FF929293"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout1">
+
+            <TextView
+                android:id="@+id/aviso"
+                android:layout_width="309dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="17dp"
+                android:text="AVISO"
+                android:textAlignment="center"
+                android:textColor="#00020E"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/botonresumen"
+        android:layout_width="103dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#17389C"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="RESUMEN"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/botongeneral"
+        android:layout_width="103dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#17389C"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="GENERAL"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/botonresumen"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/botonsala"
+        android:layout_width="103dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#17389C"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="SALA"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/botongeneral"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/botonalarma"
+        android:layout_width="103dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#0B1557"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="ALARMA"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/botonsala" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
