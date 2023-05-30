@@ -59,46 +59,6 @@ public class Alarma extends AppCompatActivity {
         View fondoaviso = findViewById(R.id.constraintLayout3);
 
 
-        /*base.child("alarmaconectada").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Boolean a = (Boolean) dataSnapshot.getValue();
-
-                if (a == false) {
-                    aviso.setText("Alarma desconectada");
-                    alarmades.setVisibility(View.VISIBLE);
-                    alarmacon.setVisibility(View.INVISIBLE);
-                    alarma.setVisibility(View.INVISIBLE);
-                    fondoaviso.setBackgroundColor(Color.GRAY);
-                    conectar.setOnClickListener(view -> {
-                        base.child("alarmaconectada").setValue(true);
-                        alarmades.setVisibility(View.INVISIBLE);
-                        alarmacon.setVisibility(View.VISIBLE);
-                        alarma.setVisibility(View.INVISIBLE);
-                    });
-                }else{
-                    aviso.setText("Alarma conectada");
-                    alarmades.setVisibility(View.INVISIBLE);
-                    alarmacon.setVisibility(View.VISIBLE);
-                    alarma.setVisibility(View.INVISIBLE);
-                    fondoaviso.setBackgroundColor(Color.GREEN);
-                    desconectar.setOnClickListener(view -> {
-                        base.child("alarmaconectada").setValue(false);
-                        base.child("alarma1").setValue(false);
-                        base.child("alarma2").setValue(false);
-                        alarmades.setVisibility(View.VISIBLE);
-                        alarmacon.setVisibility(View.INVISIBLE);
-                        alarma.setVisibility(View.INVISIBLE);
-                    });
-                }
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-            }
-        });*/
-
         base.child("alarmaconectada").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
