@@ -248,11 +248,8 @@ public class Alarma extends AppCompatActivity {
                 .setContentIntent(pendingIntent)
                 .setVisibility(NotificationCompat.VISIBILITY_PUBLIC);
 
-
-        // Since android Oreo notification channel is needed.
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(Alarma.this);
 
-        // Since android Oreo notification channel is needed.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(channedId, channedId, NotificationManager.IMPORTANCE_HIGH);
             channel.setLockscreenVisibility(NotificationCompat.VISIBILITY_PUBLIC);
@@ -261,13 +258,6 @@ public class Alarma extends AppCompatActivity {
         Notification notification = notificationBuilder.build();
 
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
             return;
         }
         notificationManager.notify(notificationID, notification);
